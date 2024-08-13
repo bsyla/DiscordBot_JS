@@ -1,11 +1,9 @@
----
-
 ## Project Structure
 
 ```
 project-root/
 │
-├── commands 
+├── commands
 │   ├── commands.js
 ├── helpers/
 │   ├── embeds.js
@@ -32,7 +30,7 @@ This feature is a Pokémon Discord Bot built using Discord.js. The bot provides 
 
 # Quotes Discord Bot
 
-This feature is a Quote Generator Discord Bot built using [Api-Ninjas/quotes API](https://api-ninjas.com/api/quotes). The bot allows users to select a category from a given range and it will return a quote and the author from the choosen option. On top of that i have integrated a [Google Images scraper from search-api](https://www.searchapi.io/docs/google-images) to embed the first picture of the author when running their name on Google Images. 
+This feature is a Quote Generator Discord Bot built using [Api-Ninjas/quotes API](https://api-ninjas.com/api/quotes). The bot allows users to select a category from a given range and it will return a quote and the author from the choosen option. On top of that i have integrated a [Google Images scraper from search-api](https://www.searchapi.io/docs/google-images) to embed the first picture of the author when running their name on Google Images.
 
 ## Features
 
@@ -46,7 +44,7 @@ This feature is an integration of ChatGPT via the [ChatGPT AI Chat Bot API from 
 ## Features
 
 - Accept input from user and provides a response using ChatGPT model.
- 
+
 ### `commands.js`
 
 This file defines the main commands for the bot and some logic per bot.
@@ -80,7 +78,6 @@ This directory contains helper functions to keep the code modular and maintainab
 
 1. Download the folder and open it in your preferred IDE:
 
-
 2. Install the required dependencies:
 
    ```
@@ -107,22 +104,24 @@ This directory contains helper functions to keep the code modular and maintainab
 ### Commands
 
 - **/pokemon**: Fetch and display details of a specified Pokémon.
-  - **Options**: 
+
+  - **Options**:
     - `pokemon`: The name of the Pokémon (required).
-  - **Returns**: 
+  - **Returns**:
     - `pokemon`: An embed containing the pokemon's name as Title, their HP and level and their image.
     - `evolve`: A button which if clicked will either edit the above embed with an evolved version of that pokemon or return a message that this pokemon can't evolve.
 
 - **/quote_finder**: Fetch and display a quote, author and their image from a choosen category.
-  - **Options**: 
+
+  - **Options**:
     - `category`: A category from the provided list (required).
-  - **Returns**: 
+  - **Returns**:
     - `quote`: Returns a string with the quote, the author, and an embed of the author's image.
 
 - **/chat_gpt**: Fetch and display the response based on the prompt provided from ChatGPT.
-  - **Options**: 
+  - **Options**:
     - `prompt`: User input (max 256) (required)
-  - **Returns**: 
+  - **Returns**:
     - `response`: Returns a string with the same response you would get if running the app via the browser.
 
 ### Example Usage
@@ -146,14 +145,16 @@ This directory contains helper functions to keep the code modular and maintainab
 
    Use the command `/quote_finder` to get a list of the built-in options, select one.
    Once selected, the bot will reply with a quote in that category, it's author and an image of theirs.
-   
+
 4. **ChatGPT**:
 
    Use the command `/chat_gpt` followed by a prompt. For example:
-      ```
-   /chat_gpt Explain briefly the history of 
+
    ```
-   The bot will reply with the same response as in the web app. 
+   /chat_gpt Explain briefly the history of
+   ```
+
+   The bot will reply with the same response as in the web app.
 
 ### ChatGPT API
 
@@ -163,6 +164,4 @@ During testing i have noticed that the api times out from time to time. Please u
 
 This project is licensed under the MIT License.
 
-
 ## Thank you!
----
