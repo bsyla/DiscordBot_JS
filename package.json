@@ -1,0 +1,21 @@
+{
+  "name": "js-2024",
+  "version": "1.0.0",
+  "description": "My new course",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "github:discordjs/builders",
+    "@discordjs/rest": "^2.3.0",
+    "discord-api-types": "^0.37.84",
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "pokemontcgsdk": "^2.0.0"
+  }
+}
